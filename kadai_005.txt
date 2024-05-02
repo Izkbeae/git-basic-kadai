@@ -1,0 +1,117 @@
+PS C:\Users\81802> mkdir git_challenge
+mkdir : 指定された名前 C:\Users\81802\git_challenge の項目は既
+に存在します。
+発生場所 行:1 文字:1
++ mkdir git_challenge
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\81802\
+   git_challenge:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerSh
+   ell.Commands.NewItemCommand
+
+PS C:\Users\81802> mkdir hello_world.txt
+mkdir : 指定された名前 C:\Users\81802\hello_world.txt の項目は
+既に存在します。
+発生場所 行:1 文字:1
++ mkdir hello_world.txt
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\81802\
+   hello_world.txt:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerSh
+   ell.Commands.NewItemCommand
+
+PS C:\Users\81802> cd git_challenge
+PS C:\Users\81802\git_challenge> echo Helo, world!>hello_world.txt
+Helo
+world!>hello_world.txt
+PS C:\Users\81802\git_challenge> echo こんにちは、世界！>hello_world.txt
+こんにちは、世界！>hello_world.txt
+PS C:\Users\81802\git_challenge> git add .helo_world.txt
+fatal: pathspec '.helo_world.txt' did not match any files
+PS C:\Users\81802\git_challenge> git add hello_world.txt
+PS C:\Users\81802\git_challenge> git commit -m "日本語訳を追記"
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+Active code page: 65001
+PS C:\Users\81802\git_challenge> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\81802\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/05/02     15:47                git_challenge
+
+
+PS C:\Users\81802\git_challenge> mkdir hello_world.txt
+mkdir : 指定された名前 C:\Users\81802\git_challenge\hello_world
+.txt の項目は既に存在します。
+発生場所 行:1 文字:1
++ mkdir hello_world.txt
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\81802\
+   ...hello_world.txt:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerSh
+   ell.Commands.NewItemCommand
+
+PS C:\Users\81802\git_challenge> cd git_challenge
+PS C:\Users\81802\git_challenge\git_challenge> echo "Hello, world!">hello_world.txt
+PS C:\Users\81802\git_challenge\git_challenge> echo "こんにちは 、世界！">>hello_world.txt
+PS C:\Users\81802\git_challenge\git_challenge> git add hello_world.txt
+PS C:\Users\81802\git_challenge\git_challenge> git commit -m "日本語訳を追記"
+[main c2951fb] 譌･譛ｬ隱櫁ｨｳ繧定ｿｽ險
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_challenge/hello_world.txt
+PS C:\Users\81802\git_challenge\git_challenge> git log
+commit c2951fb2a7ca651c469ad1638711b0f21ed58c2e (HEAD -> main)
+commit c2951fb2a7ca651c469ad1638711b0f21ed58c2e (HEAD -> main)
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 15:52:10 2024 +0900
+
+    日本語訳を追記
+
+commit e6f4651792db8b195b49609def6a841cefe2ae3f
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 15:45:40 2024 +0900
+
+    日本語訳を追記
+
+commit bbdbafc51c7cfec92a42d342f62555300a634f92
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 14:34:55 2024 +0900
+
+    日本語訳を追記
+
+commit c23fb8e7e25319b16bb96d305586180ae98ce6cf
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 13:35:12 2024 +0900
+
+    Add first change to hello_world.txt
+
+commit e3acdcb6d53157a025dc7a3116fb6e762e4540ac
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 13:31:27 2024 +0900
+
+    Add first change to hello_world.txt
+
+commit 6c29f6103032c5bc29d41d30916f70d8d87ffc62
+Author: Izkbeae <mbear2000@icloud.com>
+Author: Izkbeae <mbear2000@icloud.com>
+commit c2951fb2a7ca651c469ad1638711b0f21ed58c2e (HEAD -> main)
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 15:52:10 2024 +0900
+
+    日本語訳を追記
+
+commit e6f4651792db8b195b49609def6a841cefe2ae3f
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 15:45:40 2024 +0900
+
+    日本語訳を追記
+
+commit bbdbafc51c7cfec92a42d342f62555300a634f92
+Author: Izkbeae <mbear2000@icloud.com>
+Date:   Thu May 2 14:34:55 2024 +0900
+:
