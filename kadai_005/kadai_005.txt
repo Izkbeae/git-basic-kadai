@@ -115,3 +115,5 @@ commit bbdbafc51c7cfec92a42d342f62555300a634f92
 Author: Izkbeae <mbear2000@icloud.com>
 Date:   Thu May 2 14:34:55 2024 +0900
 :
+PS C:\Users\81802> git log --oneline
+c9b02eb (HEAD -> main) 日本語訳を追記
